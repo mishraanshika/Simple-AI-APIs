@@ -27,16 +27,19 @@
 **Setup Instructions**
     1. Clone the repo
 
-    2. Install backend dependencies
+    2. Create an enviroment file with
+        `OPENAI_API_KEY="Your Open AI API KEY"`
+
+    3. Install backend dependencies
         `pip install -r req.txt`
     
-    3. Run Qdrant locally
+    4. Run Qdrant locally
         `docker run -p 6333:6333 -v qdrant_storage:/qdrant/storage qdrant/qdrant`
     
-    4. Start the FastAPI backend
+    5. Start the FastAPI backend
         `uvicorn main:app --reload`
     
-    5.Start the React frontend
+    6.Start the React frontend
         `npm install`
         `npm start`
 
